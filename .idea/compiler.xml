@@ -8,10 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="statisticservice" />
+        <module name="monitoradmin" />
+        <module name="gateway-service" />
         <module name="configserver" />
         <module name="restapi" />
         <module name="accountservice" />
         <module name="notificationservice" />
+        <module name="discovery-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +22,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accountservice" options="-parameters" />
       <module name="configserver" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="monitoradmin" options="-parameters" />
       <module name="notificationservice" options="-parameters" />
       <module name="restapi" options="-parameters" />
       <module name="statisticservice" options="-parameters" />

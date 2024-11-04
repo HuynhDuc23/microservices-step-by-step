@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Date;
 
-@FeignClient(name = "statistic-service", url = "http://localhost:9082" , fallback = Statistic.class)
+@FeignClient(name = "statistic-service" , fallback = Statistic.class)
 public interface StatisticService {
     @PostMapping("/statistic")
     public void add(@RequestBody StatisticDTO statisticDTO);
